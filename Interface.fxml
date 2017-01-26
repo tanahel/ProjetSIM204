@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="256.0">
+               <children>
+                  <Label text="Lanceur" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="256.0">
+               <children>
+                  <Label text="Projectile" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="256.0">
+               <children>
+                  <Label text="Obstacle" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="256.0">
+               <children>
+                  <Label text="Facteurs" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="256.0">
+               <children>
+                  <Label text="Cible" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
