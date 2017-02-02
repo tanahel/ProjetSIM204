@@ -1,89 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </center>
    <bottom>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <VBox prefHeight="200.0" prefWidth="256.0">
-               <children>
-                  <Label text="Lanceur" />
-                  <ComboBox prefWidth="150.0" />
-                  <HBox prefHeight="100.0" prefWidth="200.0">
+      <Accordion BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane animated="false" prefHeight="99.0" prefWidth="1280.0" text="Paramètres">
+               <content>
+                  <HBox prefHeight="0.0" prefWidth="1280.0">
                      <children>
-                        <VBox prefHeight="100.0" prefWidth="32.0">
+                        <VBox prefHeight="200.0" prefWidth="256.0">
                            <children>
-                              <Label text="Vi" />
-                              <Label text="a" />
-                              <Label text="PosX" />
-                              <Label text="PosY" />
+                              <Label text="Lanceur" />
+                              <ComboBox prefWidth="150.0">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="32.0" spacing="10.0">
+                                       <children>
+                                          <Label text="Vi" />
+                                          <Label text="a" />
+                                          <Label text="PosX" />
+                                          <Label text="PosY" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="100.0" prefWidth="32.0" spacing="2.0">
+                                       <children>
+                                          <TextField prefHeight="25.0" prefWidth="20.0" />
+                                          <TextField />
+                                          <TextField />
+                                          <TextField />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
                            </children>
                         </VBox>
-                        <VBox prefHeight="200.0" prefWidth="100.0">
+                        <VBox prefHeight="200.0" prefWidth="256.0">
                            <children>
-                              <TextField />
-                              <TextField />
-                              <TextField />
-                              <TextField />
+                              <Label text="Projectile" />
+                              <ComboBox prefWidth="150.0" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    <VBox prefHeight="200.0" prefWidth="100.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="256.0">
+                           <children>
+                              <Label text="Obstacle" />
+                              <ComboBox prefWidth="150.0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="256.0">
+                           <children>
+                              <Label text="Facteurs" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="49.0" spacing="10.0">
+                                       <children>
+                                          <Label text="Vent" />
+                                          <Label />
+                                          <Label text="Gravité" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="100.0" prefWidth="116.0" spacing="30.0">
+                                       <children>
+                                          <TextField prefHeight="25.0" prefWidth="20.0" />
+                                          <ComboBox editable="true" prefWidth="150.0" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="256.0">
+                           <children>
+                              <Label text="Cible" />
+                              <ComboBox prefWidth="150.0" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="32.0" spacing="10.0">
+                                       <children>
+                                          <Label text="r" />
+                                          <Label text="v" />
+                                          <Label text="PosX" />
+                                          <Label text="PosY" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="100.0" prefWidth="32.0" spacing="2.0">
+                                       <children>
+                                          <TextField prefHeight="25.0" prefWidth="20.0" />
+                                          <TextField />
+                                          <TextField />
+                                          <TextField />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
                            </children>
                         </VBox>
                      </children>
                   </HBox>
-               </children>
-            </VBox>
-            <VBox prefHeight="200.0" prefWidth="256.0">
-               <children>
-                  <Label text="Projectile" />
-                  <ComboBox prefWidth="150.0" />
-                  <HBox prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <VBox prefHeight="200.0" prefWidth="100.0" />
-                        <VBox prefHeight="200.0" prefWidth="100.0" />
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-            <VBox prefHeight="200.0" prefWidth="256.0">
-               <children>
-                  <Label text="Obstacle" />
-                  <ComboBox prefWidth="150.0" />
-                  <HBox prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <VBox prefHeight="200.0" prefWidth="100.0" />
-                        <VBox prefHeight="200.0" prefWidth="100.0" />
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-            <VBox prefHeight="200.0" prefWidth="256.0">
-               <children>
-                  <Label text="Facteurs" />
-               </children>
-            </VBox>
-            <VBox prefHeight="200.0" prefWidth="256.0">
-               <children>
-                  <Label text="Cible" />
-                  <ComboBox prefWidth="150.0" />
-                  <HBox prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <VBox prefHeight="200.0" prefWidth="100.0" />
-                        <VBox prefHeight="200.0" prefWidth="100.0" />
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-         </children>
-      </HBox>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
    </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Mode">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Sauvegarder">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
 </BorderPane>
